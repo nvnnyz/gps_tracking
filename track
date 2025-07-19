@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GPS vehicle tracking system for real-time monitoring.">
+    <title>GPS Car Tracking</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0 auto; max-width: 600px; padding: 20px; line-height: 1.6; color: #333; }
+        h1 { font-size: 24px; margin-bottom: 10px; }
+        h2 { font-size: 20px; margin-top: 20px; }
+        p { font-size: 16px; margin: 10px 0; }
+        nav { background: #333; padding: 10px; margin-bottom: 20px; display: flex; justify-content: space-between; align-items: center; }
+        nav .links a { color: white; margin: 0 15px; font-size: 14px; text-decoration: none; }
+        nav .links a:hover { text-decoration: underline; }
+        nav .phone { color: white; font-size: 14px; }
+        nav .phone a { color: white; text-decoration: none; }
+        nav .phone a:hover { text-decoration: underline; }
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+        th, td { border: 1px solid #ccc; padding: 8px; text-align: left; font-size: 14px; }
+        th { background: #333; color: white; }
+        form { margin: 20px 0; }
+        input, textarea { width: 100%; padding: 10px; margin: 8px 0; font-size: 14px; border: 1px solid #ccc; box-sizing: border-box; }
+        button { background: #333; color: white; padding: 12px; border: none; cursor: pointer; font-size: 16px; width: 100%; }
+        button:hover { background: #555; }
+        a { color: #0066cc; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        details { margin: 10px 0; }
+        summary { font-size: 16px; cursor: pointer; }
+        .cta { background: #f8f8f8; padding: 15px; text-align: center; border: 1px solid #ccc; margin: 20px 0; }
+        .cta p { font-size: 16px; font-weight: bold; }
+        .trust { font-style: italic; text-align: center; margin: 10px 0; }
+        .testimonial { font-size: 14px; text-align: center; margin: 15px 0; color: #555; }
+        .why { background: #f0f0f0; padding: 10px; margin: 20px 0; font-size: 14px; text-align: center; }
+        @media (max-width: 600px) {
+            body { padding: 15px; }
+            h1 { font-size: 20px; }
+            h2 { font-size: 18px; }
+            p, th, td, summary, details p, nav a, .cta p, .testimonial, .why, nav .phone { font-size: 14px; }
+            nav { flex-wrap: wrap; justify-content: center; }
+            nav .links a { margin: 0 10px; }
+            nav .phone { margin-top: 5px; }
+            button { padding: 10px; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="links">
+            <a href="#home">Home</a>
+            <a href="#packages">Packages</a>
+            <a href="#faq">FAQ</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="phone">
+            <a href="tel:+2348033233325">+234 803 323 3325</a>
+        </div>
+    </nav>
+    <h1 id="home">GPS Car Tracking</h1>
+    <p>Our GPS vehicle tracking system lets you monitor your vehicles anywhere, anytime, from your phone or computer.</p>
+    <p>Track in real-time with ease. Our devices are simple to install, affordable, and built for security. Protect your cars, trucks, or fleet today.</p>
+    <p>Monitor speed, location, and routes instantly. Receive alerts for unauthorized movement or geofence breaches. Ideal for personal vehicles, business fleets, or asset management.</p>
+    <p>With our system, you gain peace of mind. Know where your vehicles are, optimize routes, and reduce costs. Trusted by thousands for reliability and precision.</p>
+    <div class="why">
+        <p>This site is lightweight and fast, designed to load quickly even on slow networks, so you get the info you need without the clutter.</p>
+    </div>
+    <h2 id="packages">Our Packages</h2>
+    <table>
+        <tr><th>Package</th><th>Features</th><th>Installation</th></tr>
+        <tr><td>Standard</td><td>Real-time tracking, mobile app, vehicle demobilizer, geofence alerts</td><td>₦70,000</td></tr>
+        <tr><td>Premium</td><td>Standard + route history, advanced alerts</td><td>₦85,000</td></tr>
+    </table>
+    <h2 id="faq">Frequently Asked Questions</h2>
+    <details>
+        <summary>How long does installation take?</summary>
+        <p>Installation typically takes 1-2 hours per vehicle, depending on the model.</p>
+    </details>
+    <details>
+        <summary>Will it work with my vehicle?</summary>
+        <p>Our devices are compatible with most vehicles, including cars, trucks, and vans.</p>
+    </details>
+    <details>
+        <summary>Can I track multiple vehicles?</summary>
+        <p>Yes, our system supports tracking multiple vehicles from a single dashboard, perfect for fleets.</p>
+    </details>
+    <details>
+        <summary>Is the mobile app free?</summary>
+        <p>Yes, the mobile app is included with both Standard and Premium packages at no extra cost.</p>
+    </details>
+    <details>
+        <summary>What happens if my vehicle is stolen?</summary>
+        <p>Our system sends instant alerts for unauthorized movement, and the vehicle demobilizer can help disable the engine remotely (Standard and Premium).</p>
+    </details>
+    <div class="cta">
+        <p>Get started today! Contact us for a free quote or demo.</p>
+    </div>
+    <p class="trust">Trusted by over 10,000 vehicles across Nigeria.</p>
+    <p class="testimonial">"This system saved my business thousands by optimizing our fleet routes!" – Ade, Lagos</p>
+    <h2 id="contact">Contact Us</h2>
+    <form action="https://formsubmit.co/info@gpsfleetmatic.com" method="POST" class="formsubmit-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="tel" name="phone" placeholder="Your Phone Number" pattern="[0-9]{10,15}" title="Enter a valid phone number">
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <input type="hidden" name="_subject" value="New GPS Tracking Inquiry">
+        <input type="hidden" name="_autoresponse" value="Thank you for your inquiry! We'll get back to you soon.">
+        <input type="hidden" name="_template" value="table">
+        <button type="submit">Contact Us</button>
+    </form>
+    <p>Call us: <a href="tel:+2348033233325">+234 803 323 3325</a> | Email: <a href="mailto:info@gpsfleetmatic.com">info@gpsfleetmatic.com</a></p>
+</body>
+</html>
